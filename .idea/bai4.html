@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cộng 2 số bằng sự kiện</title>
+</head>
+<body>
+<input type="number" id="so_1" placeholder="Nhập số">
+<input type="number" id="so_2" placeholder="Nhập số">
+<button onclick="tinh()">Kết quả</button>
+<script>
+function tinh(){
+  let layGiaTri1= document.getElementById("so_1").value;
+  let layGiaTri2= document.getElementById("so_2").value;
+  let so1= Number(layGiaTri1);
+  let so2= Number(layGiaTri2);
+  let ketQua=so1+so2;
+  console.log(`Giá trị của 2 ô là: ${so1} và ${so2}. Tổng là: ${ketQua}`);
+  alert(`Giá trị của 2 ô là: ${so1} và ${so2}. Tổng là: ${ketQua}`);
+  document.write(`Giá trị của 2 ô là: ${so1} và ${so2}. Tổng là: ${ketQua}`);
+}
+</script>
+</body>
+</html>
